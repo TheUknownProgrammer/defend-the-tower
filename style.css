@@ -1,0 +1,46 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    user-select: none;
+}
+#bc {
+    opacity: 0.5;
+    width: 100vw;
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    left: 0;
+    transform: scaleX(-1);
+}
+
+#game_container {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    translate: -50% -50%;
+}
+#game_container * {
+    margin: 10px;
+}
+#game_container #canvas {
+    border: 2.5px dashed black;
+    background-image: url("resources/images/floor.png");
+    background-size: cover;
+    background-position: center;
+    width: 500px;
+    height: 500px;
+    cursor: pointer;
+    border-radius: 3.5px;
+}
+#game_container h1 {
+    text-align: center;
+    -webkit-text-stroke: 0.3px rgb(62, 62, 62);
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    color: gray;
+    background-color: white;
+    width: fit-content;
+    margin-right: auto;
+    margin-left: auto;
+    box-shadow: 3px 3px 3px gray;
+}
